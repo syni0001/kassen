@@ -2,15 +2,106 @@
 
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang="da">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="generator" content={Astro.generator} />
+	<title>Kassen</title>
+	<link rel="stylesheet" href="/src/styles/style.css">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a href="#">LOGO</a>
+			<ul>
+
+				<li>
+					<a href="#">Opening hours</a>
+				</li>
+				<li>
+					<a href="#">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<section>
+				<div class="hero_grid">
+					<img src="/public/img1.avif" alt="">
+					<div class="hero_txt_box">
+						<h1>
+							Think <span>outside</span> the box.
+						</h1>
+						<div class="h1_txt_box">
+							<h1>
+								Drink <span>inside</span> the box.
+							</h1>
+						</div>
+					</div>
+				</div>
+
+			</section>
+			<section>
+				<h2>
+					Recipe for a perfect night
+				</h2>
+				<div class="flex_box">
+					<div class="card">
+						<h3>
+							Drinks
+						</h3>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+							when an unknown printer took a galley
+						</p>
+					</div>
+
+					<div class="card">
+						<h3>
+							Dimmed lights
+						</h3>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+							when an unknown printer took a galley
+						</p>
+					</div>
+
+					<div class="card">
+						<h3>
+							Good music
+						</h3>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+							when an unknown printer took a galley
+						</p>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="slider-container">
+					<div class="slider">
+						<img src="/public/img2.avif" alt="Billede 1">
+						<img src="/public/img3.avif" alt="Billede 2">
+						<img src="/public/img4.avif" alt="Billede 3">
+						<img src="/public/img5.jpg" alt="Billede 4">
+						<img src="/public/img6.jpg" alt="Billede 5">
+					</div>
+					<button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+					<button class="next" onclick="moveSlide(1)">&#10095;</button>
+				</div>
+
+			</section>
+		</main>
+	</header>
+
+<script src="/src/js/script.js"></script>
+</body>
+
+
 </html>
